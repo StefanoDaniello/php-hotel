@@ -1,3 +1,7 @@
+<?php
+    $selectedVote = isset($_GET['vote']) && $_GET['vote'] !== '' ? $_GET['vote'] : 'all';
+    $selectedParking = isset($_GET['parking']) && $_GET['parking'] !== '' ? $_GET['parking'] : 'all';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,21 +29,21 @@
             </h1>
             <div class="d-flex">
             <form action="index.php" method="GET" class="d-flex">
-                <select class="form-control me-2" name="vote">
-                    <option value="all" <?php if(isset($_GET['vote']) && $_GET['vote'] == 'all') echo 'selected'; ?>>vote</option>
-                    <option value="1" <?php if(isset($_GET['vote']) && $_GET['vote'] == '1') echo 'selected'; ?>>1</option>
-                    <option value="2" <?php if(isset($_GET['vote']) && $_GET['vote'] == '2') echo 'selected'; ?>>2</option>
-                    <option value="3" <?php if(isset($_GET['vote']) && $_GET['vote'] == '3') echo 'selected'; ?>>3</option>
-                    <option value="4" <?php if(isset($_GET['vote']) && $_GET['vote'] == '4') echo 'selected'; ?>>4</option>
-                    <option value="5" <?php if(isset($_GET['vote']) && $_GET['vote'] == '5') echo 'selected'; ?>>5</option>
-                </select>
-                <select class="form-control me-2" name="parking">
-                    <option value="all" <?php if(isset($_GET['parking']) && $_GET['parking'] == 'all') echo 'selected'; ?>>All</option>
-                    <option value="0" <?php if(isset($_GET['parking']) && $_GET['parking'] == '0') echo 'selected'; ?>>No Parking</option>
-                    <option value="1" <?php if(isset($_GET['parking']) && $_GET['parking'] == '1') echo 'selected'; ?>>Parking</option>
-                </select>
-                <button type="submit" class="btn btn-outline-success">Search</button>
-            </form>
+                    <select class="form-control me-2" name="vote">
+                        <option value="all" <?php if($selectedVote === 'all') echo 'selected'; ?>>vote</option>
+                        <option value="1" <?php if($selectedVote === '1') echo 'selected'; ?>>1</option>
+                        <option value="2" <?php if($selectedVote === '2') echo 'selected'; ?>>2</option>
+                        <option value="3" <?php if($selectedVote === '3') echo 'selected'; ?>>3</option>
+                        <option value="4" <?php if($selectedVote === '4') echo 'selected'; ?>>4</option>
+                        <option value="5" <?php if($selectedVote === '5') echo 'selected'; ?>>5</option>
+                    </select>
+                    <select class="form-control me-2" name="parking">
+                        <option value="all" <?php if($selectedParking === 'all') echo 'selected'; ?>>All</option>
+                        <option value="0" <?php if($selectedParking === '0') echo 'selected'; ?>>No Parking</option>
+                        <option value="1" <?php if($selectedParking === '1') echo 'selected'; ?>>Parking</option>
+                    </select>
+                    <button type="submit" class="btn btn-outline-success">Search</button>
+                </form>
             </div>
         </div>
     </header>

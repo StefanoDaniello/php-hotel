@@ -12,6 +12,7 @@ if ((isset($_GET['parking']) && $_GET['parking'] !== '') || (isset($_GET['vote']
 }
 
 
+
 include __DIR__ . "/Views/header.php";
 ?>
 <main class="container">
