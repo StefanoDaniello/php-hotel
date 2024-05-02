@@ -10,7 +10,7 @@
     </thead>
     <tbody>
       <?php
-      foreach ($hotels as $hotel) {
+      foreach ($hotels_foreach as $hotel) {
         echo "<tr> <td>{$hotel['name']}</td> <td>{$hotel['description']}</td> 
         <td>{$hotel['parking']}</td> 
         <td>{$hotel['vote']}</td> 
