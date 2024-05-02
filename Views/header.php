@@ -19,5 +19,17 @@
 
 <body>
     <header>
-        <h1>header</h1>
+        <div class="container  d-flex justify-content-between ">
+            <h1>
+                Hotels
+            </h1>
+            <form action="index.php" method="GET" class="d-flex">
+                <select class="form-control me-2" name="stats">
+                    <option value="all">All</option>
+                    <option value="0">No Parking</option>
+                    <option value="1">Parking</option>
+                </select>
+                <button type="submit" class="btn btn-outline-success">Search</button>
+            </form>
+        </div>
     </header>
