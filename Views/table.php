@@ -12,8 +12,8 @@
       <?php
       foreach ($hotels_foreach as $hotel) {
         echo "<tr> <td>{$hotel['name']}</td> <td>{$hotel['description']}</td> 
-        <td>{$hotel['parking']}
-          <i class=\"" . ($hotel['parking']  ? 'fa-solid fa-square-check' : 'fa-solid fa-square-xmark') . "\"></i>
+        <td>
+          <div class=\"" . ($hotel['parking']  ? 'circle-green' : 'circle-red') . "\"></div>
         </td> 
         <td>{$hotel['vote']}</td> 
         <td>{$hotel['distance_to_center']}</td>
