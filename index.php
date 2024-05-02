@@ -1,14 +1,17 @@
 <?php
 include __DIR__ . "/Models/hotel.php";
 
-if (!empty($_GET['parking']) || (isset($_GET['parking']) && $_GET['parking'] == 0)) {
-    $parking = $_GET['parking'];
-    $hotels_foreach = array_filter($hotels, function ($hotel) use ($parking) {
-      return $hotel['parking'] == $parking || $parking == "all";
+if ((isset($_GET['parking']) && $_GET['parking'] !== '') || (isset($_GET['vote']) && $_GET['vote'] !== '')) {
+    $parking = isset($_GET['parking']) ? $_GET['parking'] : 'all';
+    $vote = isset($_GET['vote']) ? $_GET['vote'] : 'all';
+
+    $hotels_foreach = array_filter($hotels, function ($hotel) use ($parking, $vote) {
+        return ($hotel['parking'] == $parking || $parking == "all") && ($hotel['vote'] >= $vote || $vote == "all");
     });
-  } else {
+} else {
     $hotels_foreach = $hotels;
-  }
+}
+
 
 include __DIR__ . "/Views/header.php";
 ?>

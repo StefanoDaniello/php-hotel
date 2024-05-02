@@ -23,13 +23,20 @@
             <h1>
                 Hotels
             </h1>
-            <form action="index.php" method="GET" class="d-flex">
-                <select class="form-control me-2" name="parking">
-                    <option value="all">All</option>
-                    <option value="0">No Parking</option>
-                    <option value="1">Parking</option>
-                </select>
-                <button type="submit" class="btn btn-outline-success">Search</button>
-            </form>
+            <div class="d-flex">
+                <form action="index.php" method="GET" class="d-flex">
+                    <select class="form-control me-2" name="vote">
+                        <option value="all">vote</option>
+                        <option value="2">2+</option>
+                        <option value="4">4+</option>
+                    </select>
+                    <select class="form-control me-2" name="parking">
+                        <option value="all">All</option>
+                        <option value="0">No Parking</option>
+                        <option value="1">Parking</option>
+                    </select>
+                    <button type="submit" class="btn btn-outline-success">Search</button>
+                </form>
+            </div>
         </div>
     </header>
