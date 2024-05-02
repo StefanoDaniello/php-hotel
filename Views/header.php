@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="js/script.js" type="text/javascript" defer></script>
-    <title>Steam</title>
+    <title>php-hotel</title>
 
 </head>
 
