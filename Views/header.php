@@ -16,7 +16,6 @@
     <link grity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="js/script.js" type="text/javascript" defer></script>
     <title>php-hotel</title>
 
 </head>
@@ -24,7 +23,7 @@
 <body>
     <header>
         <div class="container  d-flex justify-content-between ">
-            <h1>
+            <h1 class="text-white">
                 Hotels
             </h1>
             <div class="d-flex">
