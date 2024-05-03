@@ -1,4 +1,7 @@
 <?php
+//    Essendo che  mandiamo i dati sempre a questa pagina e abbiamo il $_POST 
+//    in auth.php includiamo in questa pagina auth che utilizza il $_POST email e password
+  include __DIR__."/Controllers/auth.php";
   include __DIR__ . "/Views/header.php";
 ?>
 
