@@ -1,6 +1,10 @@
 <?php
 session_start();
 
+if (isset($_SESSION['userId'])) {
+    header('Location: index.php');
+}
+
 include __DIR__ . "/../Models/user.php";
 
 if (!empty($_POST['email']) && !empty($_POST['password'])) {

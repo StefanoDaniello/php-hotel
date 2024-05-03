@@ -1,8 +1,8 @@
 <?php
 session_start();
-if(!isset($_SESSION['userId'])){
-    header('Location: login.php');
+if(!isset($_SESSION['userId'])) {
     session_destroy();
+    header('Location: login.php');
     // utilizzo die per assicurarmi che l' utente non loggato
     // venga reindirizzato alla pagina di login
     die();
@@ -28,7 +28,7 @@ include __DIR__ . "/Views/header.php";
 ?>
 <main class="container">
     <div>
-        <a href="login.php" class="btn btn-danger">Logout</a></a>
+        <a href="logout.php" class="btn btn-danger">Logout</a></a>
     </div>
   <?php
      
