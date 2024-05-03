@@ -27,7 +27,7 @@ if ((isset($_GET['parking']) && $_GET['parking'] !== '') || (isset($_GET['vote']
 include __DIR__ . "/Views/header.php";
 ?>
 <main class="container">
-    <div>
+    <div class="m-2">
         <a href="logout.php" class="btn btn-danger">Logout</a></a>
     </div>
   <?php

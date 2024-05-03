@@ -12,7 +12,7 @@ if(isset($_SESSION['userId'])) {
 
 <main class="container my-4"></main>
     <div class="text-center">
-        <h3><?= "Arrivederci " . $name ?></h3>
+        <h3 class="text-white"><?= "Arrivederci " . $name ?></h3>
     </div>
 </main>
 
