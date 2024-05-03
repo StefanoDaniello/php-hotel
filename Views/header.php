@@ -21,7 +21,8 @@
 </head>
 
 <body>
-    <header>
+    <header <?php 
+    if(!isset($_SESSION['userId'])) echo 'style="display: none;"'; ?>>
         <div class="container  d-flex justify-content-between ">
             <h1 class="text-white">
                 Hotels

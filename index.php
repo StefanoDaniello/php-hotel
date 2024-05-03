@@ -1,4 +1,13 @@
 <?php
+session_start();
+if(!isset($_SESSION['userId'])){
+    header('Location: login.php');
+    session_destroy();
+    // utilizzo die per assicurarmi che l' utente non loggato
+    // venga reindirizzato alla pagina di login
+    die();
+}
+
 
 include __DIR__ . "/Models/hotel.php";
 
