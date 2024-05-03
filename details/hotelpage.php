@@ -3,7 +3,9 @@
 include __DIR__ . "/../Models/hotel.php";
 $hotel = getHotel($hotels);
 include __DIR__ . "/../Views/header.php";
+
 ?>
+<link rel="stylesheet" href="../css/style.css">
 
 <main class="container py-2">
     <div class="row">

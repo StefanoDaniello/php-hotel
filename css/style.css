@@ -7,7 +7,7 @@ body {
     background-image: url(https://www.hotel-splendid.it/media/slide/homepage/01.jpg);
     background-size: cover; /* Per fare in modo che l'immagine si adatti completamente al body */
     background-repeat: no-repeat; /* Per evitare la ripetizione dell'immagine */
-    height: calc(100vh - 24px);
+    height: 100vh
 }
 a{
  color: white;   
