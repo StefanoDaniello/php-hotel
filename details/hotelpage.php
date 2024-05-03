@@ -10,7 +10,7 @@ include __DIR__ . "/../Views/header.php";
 <main class="container py-2">
     <div class="row">
         <div class="col">
-            <h1 class="text-center">Hotel Details</h1>
+            <h1 class="text-center text-white ">Hotel Details</h1>
         </div>
     </div>
     <div class="row">
