@@ -31,10 +31,15 @@ include __DIR__ . "/Views/header.php";
         <a href="logout.php" class="btn btn-danger">Logout</a></a>
     </div>
   <?php
+
      
     include __DIR__ . "/Views/table.php";
     if($hotels_foreach == []){
-        echo "<h3 class='text-center'>No hotels found</h3>";
+        echo "
+        <div class='w-50 bg-black mx-auto bg-opacity-75 rounded-3 '>
+            <h3 class='text-center text-white '>No hotels found</h3>
+        </div>
+        ";
     }
   ?>
 </main>

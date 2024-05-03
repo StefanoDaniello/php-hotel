@@ -20,6 +20,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
         $user = array_shift($authenticated);
         $_SESSION['userId'] = $user['id'];
         $_SESSION['name'] = $user['name'];
+        $_SESSION['surname'] = $user['surname'];
         header('Location: index.php');
     } else {
         header('location: login.php?error=1');

@@ -2,6 +2,7 @@
 session_start();
 if(isset($_SESSION['userId'])) {
     $name = $_SESSION['name'];
+    $surname = $_SESSION['surname'];
     session_destroy();
 }else{
     header('Location: login.php');
@@ -12,7 +13,7 @@ if(isset($_SESSION['userId'])) {
 
 <main class="container my-4"></main>
     <div class="text-center">
-        <h3 class="text-white"><?= "Arrivederci " . $name ?></h3>
+        <h3 class="text-white"><?= "Arrivederci " . $name . ' ' . $surname?></h3>
     </div>
 </main>
 
