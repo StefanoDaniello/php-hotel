@@ -37,7 +37,7 @@ function getStars($hotel) {
         <td class='table-dark'>
           <div class=\"stars-container\">" . getStars($hotel) . "</div> 
         </td> 
-        <td class='table-dark'>{$hotel['distance_to_center']}</td>
+        <td class='table-dark'>{$hotel['distance_to_center']} km</td>
         </tr>";
         }
       ?>

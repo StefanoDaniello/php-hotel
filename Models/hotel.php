@@ -42,13 +42,46 @@
             'vote' => 2,
             'distance_to_center' => 50
         ],
+        [
+            'name' => 'Hotel Sole',
+            'description' => 'Hotel Sole Descrizione',
+            'parking' => true,
+            'id' => 7,
+            'vote' => 3,
+            'distance_to_center' => 3.2
+        ],
+        [
+            'name' => 'Hotel Luna',
+            'description' => 'Hotel Luna Descrizione',
+            'parking' => true,
+            'id'=> 8,
+            'vote' => 4,
+            'distance_to_center' => 1.8 
+        ],
+        [
+            'name' => 'Hotel Stella',
+            'description' => 'Hotel Stella Descrizione',
+            'parking' => false,
+            'id'=> 9,
+            'vote' => 2,
+            'distance_to_center' => 2.5
+        ],
+        [
+            'name' => 'Hotel Splendido',
+            'description' => 'Hotel Splendido Descrizione',
+            'parking' => true,
+            'id'=> 10,
+            'vote' => 5,
+            'distance_to_center' => 6.7
+        ],
+        [
+            'name' => 'Hotel Parco',
+            'description' => 'Hotel Parco Descrizione',
+            'parking' => true,
+            'id'=> 11,
+            'vote' => 3,
+            'distance_to_center' => 4.0
+        ]
+        
 
     ];
-    function getHotelId($hotels){
-        $hoteldata = array_filter($hotels, function ($hotel){
-            return $hotel['id'] == $_GET['id'];
-        });
-        $details = array_shift($hoteldata);
-
-        return $details;
-    }
