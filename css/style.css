@@ -3,6 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-image: url(https://www.hotel-splendid.it/media/slide/homepage/01.jpg);
+    background-size: cover; /* Per fare in modo che l'immagine si adatti completamente al body */
+    background-repeat: no-repeat; /* Per evitare la ripetizione dell'immagine */
+    height: 100vh;
+}
+a{
+ color: white;   
+}
+a:hover{
+    text-decoration: none;
+}
 .circle-green{
     border-radius: 50%;
     width: 10px;
@@ -18,10 +30,4 @@
     background-color: red;
     display: inline-block;
 
-}
-body {
-    background-image: url(https://www.hotel-splendid.it/media/slide/homepage/01.jpg);
-    background-size: cover; /* Per fare in modo che l'immagine si adatti completamente al body */
-    background-repeat: no-repeat; /* Per evitare la ripetizione dell'immagine */
-    height: 100vh;
 }

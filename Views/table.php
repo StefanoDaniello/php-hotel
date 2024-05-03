@@ -29,7 +29,7 @@ function getStars($hotel) {
       <?php
       foreach ($hotels_foreach as $hotel) {
         echo "<tr> 
-        <td class='table-dark'>{$hotel['name']}</td> 
+        <td class='table-dark'><a href='details/hotelpage.php?id={$hotel['id']}'> {$hotel['name']}</td> 
         <td class='table-dark'>{$hotel['description']}</td> 
         <td class='table-dark'>
           <div class=\"" . ($hotel['parking']   ? 'circle-green' : 'circle-red') . "\"></div>
